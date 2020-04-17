@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from "axios"; // import axios to fetch Star Wars data
-import CharacterCards from "./components/CharacterCards"
+import CharacterCards from "./components/CharacterCards";
 
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -34,7 +34,8 @@ const App = () => {
 
   return (
     <div className="App">
-        <CharacterCards results={starWarsData.results} />
+      <h1>Space ID Card Applicants</h1>
+      <CharacterCards results={starWarsData.results} />
     </div>
   );
 }

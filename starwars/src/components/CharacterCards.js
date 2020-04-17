@@ -6,8 +6,8 @@ const CharacterCards = ({ results }) => {
   return (
     <div className="character-container">
       {
-        results.map(result => {
-          return <Character character={result}/>
+        results.map((result, id) => {
+          return <Character name={result.name} height={result.height} mass={result.mass} birth_year={result.birth_year} key={id}/>
         })
       }
     </div>
